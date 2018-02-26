@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB2EAA0C2043D1D200619A5E /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2EAA0A2043D1D200619A5E /* CollectionViewCell.swift */; };
+		EB2EAA0D2043D1D200619A5E /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB2EAA0B2043D1D200619A5E /* CollectionViewCell.xib */; };
 		EB6D47A6203571D800E760FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D47A5203571D800E760FF /* AppDelegate.swift */; };
 		EB6D47A8203571D800E760FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D47A7203571D800E760FF /* ViewController.swift */; };
 		EB6D47AB203571D800E760FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB6D47A9203571D800E760FF /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB2EAA0A2043D1D200619A5E /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		EB2EAA0B2043D1D200619A5E /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		EB6D47A2203571D700E760FF /* AssignmentWeek3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssignmentWeek3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6D47A5203571D800E760FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB6D47A7203571D800E760FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +39,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB2EAA0F2043F7D900619A5E /* SupportFile */ = {
+			isa = PBXGroup;
+			children = (
+				EB6D47A5203571D800E760FF /* AppDelegate.swift */,
+				EB6D47AC203571D800E760FF /* Assets.xcassets */,
+				EB6D47B1203571D800E760FF /* Info.plist */,
+			);
+			path = SupportFile;
+			sourceTree = "<group>";
+		};
+		EB2EAA102043F7ED00619A5E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB6D47A7203571D800E760FF /* ViewController.swift */,
+				EB2EAA0A2043D1D200619A5E /* CollectionViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB2EAA112043F7F700619A5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB6D47A9203571D800E760FF /* Main.storyboard */,
+				EB2EAA0B2043D1D200619A5E /* CollectionViewCell.xib */,
+				EB6D47AE203571D800E760FF /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EB6D4799203571D700E760FF = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +87,9 @@
 		EB6D47A4203571D800E760FF /* AssignmentWeek3 */ = {
 			isa = PBXGroup;
 			children = (
-				EB6D47A5203571D800E760FF /* AppDelegate.swift */,
-				EB6D47A7203571D800E760FF /* ViewController.swift */,
-				EB6D47A9203571D800E760FF /* Main.storyboard */,
-				EB6D47AC203571D800E760FF /* Assets.xcassets */,
-				EB6D47AE203571D800E760FF /* LaunchScreen.storyboard */,
-				EB6D47B1203571D800E760FF /* Info.plist */,
+				EB2EAA0F2043F7D900619A5E /* SupportFile */,
+				EB2EAA102043F7ED00619A5E /* Controller */,
+				EB2EAA112043F7F700619A5E /* View */,
 			);
 			path = AssignmentWeek3;
 			sourceTree = "<group>";
@@ -125,6 +155,7 @@
 			files = (
 				EB6D47B0203571D800E760FF /* LaunchScreen.storyboard in Resources */,
 				EB6D47AD203571D800E760FF /* Assets.xcassets in Resources */,
+				EB2EAA0D2043D1D200619A5E /* CollectionViewCell.xib in Resources */,
 				EB6D47AB203571D800E760FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +169,7 @@
 			files = (
 				EB6D47A8203571D800E760FF /* ViewController.swift in Sources */,
 				EB6D47A6203571D800E760FF /* AppDelegate.swift in Sources */,
+				EB2EAA0C2043D1D200619A5E /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +308,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2CY3RX8F76;
-				INFOPLIST_FILE = AssignmentWeek3/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AssignmentWeek3/SupportFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DjangoCode.AssignmentWeek3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,7 +323,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2CY3RX8F76;
-				INFOPLIST_FILE = AssignmentWeek3/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AssignmentWeek3/SupportFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DjangoCode.AssignmentWeek3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
