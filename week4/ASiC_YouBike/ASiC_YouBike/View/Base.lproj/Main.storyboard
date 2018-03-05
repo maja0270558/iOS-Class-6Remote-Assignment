@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--YouBike-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="YouBikeViewController" customModule="ASiC_YouBike" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F7M-wf-naT">
+                                <rect key="frame" x="0.0" y="20" width="375" height="120"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_marker" translatesAutoresizingMaskIntoConstraints="NO" id="Wpa-10-Laf">
+                                        <rect key="frame" x="8" y="8" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="Toc-SL-wNc"/>
+                                            <constraint firstAttribute="width" constant="25" id="xVn-bN-btw"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="站名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAD-E3-mk2">
+                                        <rect key="frame" x="41" y="8" width="326" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.62835627794265747" green="0.38347369432449341" blue="0.35123831033706665" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="台數" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crC-2y-kgf">
+                                        <rect key="frame" x="8" y="69.5" width="359" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <color key="textColor" red="0.77888667583465576" green="0.45022380352020264" blue="0.37422752380371094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="位置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9NT-Kp-RDV">
+                                        <rect key="frame" x="8" y="41" width="359" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.84391415119171143" green="0.63621431589126587" blue="0.51229888200759888" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.93725490196078431" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="crC-2y-kgf" firstAttribute="top" secondItem="9NT-Kp-RDV" secondAttribute="bottom" constant="8" id="0le-MZ-n0M"/>
+                                    <constraint firstItem="MAD-E3-mk2" firstAttribute="leading" secondItem="Wpa-10-Laf" secondAttribute="trailing" constant="8" id="Ieh-ez-N4H"/>
+                                    <constraint firstItem="Wpa-10-Laf" firstAttribute="leading" secondItem="F7M-wf-naT" secondAttribute="leading" constant="8" id="Jot-yv-Qem"/>
+                                    <constraint firstItem="9NT-Kp-RDV" firstAttribute="leading" secondItem="F7M-wf-naT" secondAttribute="leading" constant="8" id="LSC-lU-HCw"/>
+                                    <constraint firstItem="MAD-E3-mk2" firstAttribute="top" secondItem="F7M-wf-naT" secondAttribute="top" constant="8" id="MyY-2b-NV8"/>
+                                    <constraint firstItem="9NT-Kp-RDV" firstAttribute="top" secondItem="Wpa-10-Laf" secondAttribute="bottom" constant="8" id="OUm-Dm-Abz"/>
+                                    <constraint firstItem="crC-2y-kgf" firstAttribute="leading" secondItem="F7M-wf-naT" secondAttribute="leading" constant="8" id="e0a-cA-vwg"/>
+                                    <constraint firstAttribute="height" constant="120" id="fEg-Fx-Rwz"/>
+                                    <constraint firstItem="Wpa-10-Laf" firstAttribute="top" secondItem="F7M-wf-naT" secondAttribute="top" constant="8" id="gUR-Jo-PYX"/>
+                                    <constraint firstAttribute="trailing" secondItem="MAD-E3-mk2" secondAttribute="trailing" constant="8" id="gma-xI-qgU"/>
+                                    <constraint firstAttribute="trailing" secondItem="9NT-Kp-RDV" secondAttribute="trailing" constant="8" id="sRB-6I-4Ev"/>
+                                    <constraint firstAttribute="trailing" secondItem="crC-2y-kgf" secondAttribute="trailing" constant="8" id="xfd-ui-Rq5"/>
+                                </constraints>
+                            </view>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7hf-ns-XV4">
+                                <rect key="frame" x="0.0" y="140" width="375" height="527"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.93725490196078431" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7hf-ns-XV4" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="6xG-qN-xWT"/>
+                            <constraint firstItem="F7M-wf-naT" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="Kry-tV-TGS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="F7M-wf-naT" secondAttribute="top" id="OQB-f0-r1P"/>
+                            <constraint firstItem="F7M-wf-naT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerXWithinMargins" id="jHF-f9-P6P"/>
+                            <constraint firstItem="7hf-ns-XV4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ljL-Hq-GBV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7hf-ns-XV4" secondAttribute="bottom" id="pl4-DG-sBs"/>
+                            <constraint firstItem="7hf-ns-XV4" firstAttribute="top" secondItem="F7M-wf-naT" secondAttribute="bottom" id="uFP-Dt-KI0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="YouBike" id="n8Z-Nw-5rk"/>
+                    <connections>
+                        <outlet property="locateLabel" destination="9NT-Kp-RDV" id="hYn-vz-xMO"/>
+                        <outlet property="mapView" destination="7hf-ns-XV4" id="6Bi-OB-7Ia"/>
+                        <outlet property="remainLabel" destination="crC-2y-kgf" id="1Nn-7t-Yf3"/>
+                        <outlet property="titleLabel" destination="MAD-E3-mk2" id="WI8-ny-OAV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="456.80000000000001" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_marker" width="30" height="30"/>
+    </resources>
+</document>
